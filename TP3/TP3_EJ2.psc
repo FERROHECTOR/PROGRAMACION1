@@ -12,21 +12,29 @@ Algoritmo Num_rand
 		
 		Num_aza = azar(50)
 		Escribir Num_aza
-		Si (Num_aza>men) Entonces
+		
+		Si (x==1) Entonces
 			men=Num_aza
-		FinSi	
-		
-		Si (Num_aza<may) Entonces
-				may=Num_aza
-		FinSi
+			may=Num_aza
+		SiNo
 			
+			
+				Si (Num_aza>=may) Entonces
+					may=Num_aza
+				FinSi	
 		
+				Si (Num_aza<=men) Entonces
+					men=Num_aza
+				FinSi
+			FinSi
+			
+					
 	Fin Para
 	
 	
 	Escribir "el Numero mayor es  " may
 	Escribir "el Numero menor es  " men
-	// no sé por qué el resultado es al revés de la fórmula
+
 	
 	
 FinAlgoritmo
